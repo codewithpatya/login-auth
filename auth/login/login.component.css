@@ -1,0 +1,43 @@
+.row{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mat-icon{
+    width: 7rem;
+    height: 4rem;
+    font-size: 5rem;
+}
+.card{
+
+    background-color: rgba(0, 0, 255, 0.509);
+    border: none;
+}
+.login{
+    background-color: rgba(0, 0, 255, 0.29);
+}
+input{
+    background-color: rgba(0, 0, 255, 0.386);
+    border-top: none;
+    border-bottom: 1px solid black;
+    border-right: none;
+    border-left: none;
+    border-radius: 0px;
+}
+.loaders{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.317);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    position: relative;
+    height: 100%;
+}

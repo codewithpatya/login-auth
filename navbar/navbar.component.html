@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+          <a class="nav-link text-white text-decoration-none d-flex justify-content-center align-items-center" routerLink="login">Login<mat-icon>login</mat-icon></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <div *ngIf="myUser">
+            <a class="nav-link" routerLink="contact">Contact</a>
+        </div>
+          </li>
+          <!-- <li class="nav-item">
+            <div *ngIf="myUser">
+            <a class="nav-link" routerLink="feedback">Feedback</a>
+          </div>
+          </li> -->
+        </ul>
+
+      </div>
+    </div>
+  </nav>

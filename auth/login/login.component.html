@@ -1,0 +1,25 @@
+<div class="login">
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 ">
+            <div class="card p-5">  
+            <h1 class="text-center text-primary"><mat-icon>person</mat-icon>Login</h1>         
+             <form #logForm="ngForm" (submit)="handleLogin()" >
+
+    
+            <input type="email"  placeholder="Enter Your E-mail" class="form-control mb-3" name="email" [(ngModel)]="loginUser.email">
+
+    
+            <input type="password"   placeholder="Enter Your Password" class="form-control mb-3 " name="password" [(ngModel)]="loginUser.password">
+            <button type="submit" value="login" class="btn btn-dark">Login</button>
+            </form>
+        </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+<div class="loaders" *ngIf="loader">
+    <mat-spinner></mat-spinner>
+</div>
+</div>
